@@ -1,5 +1,22 @@
+import { useParams } from "react-router-dom";
+
+
 function JobDetails() {
-  return <h1>JobDetails</h1>;
+
+  const params= useParams();
+
+
+  const id  = params.id;
+
+
+  return (
+
+    <>
+    
+    <h2>{`Job id : ${id}`}</h2>
+
+    </>
+  );
 }
 
 export default JobDetails;
